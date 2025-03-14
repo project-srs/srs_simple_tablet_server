@@ -1,19 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''
-function
-* select
-    * drawer_select (action: ~/select/drawer_task - post /select_drawer, websocket /status select/drawer)
-    * action_select (action: ~/select/action_task - post /select_action, websocket /status select/action)
-* display
-    * header_name (parameter: header.name - websocket /status display/header/name)
-    * header_color (parameter: header.color - websocket /status display/header/color)
-    * board_icon (parameter: board.icon - websocket /status display/board/icon)
-    * board_message (parameter: board.message - websocket /status display/board/message)
-* note (service: ~/set_note - websocket /status note)
-'''
-
 import os
 import time
 import threading
