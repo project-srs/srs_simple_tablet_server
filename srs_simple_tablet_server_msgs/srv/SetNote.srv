@@ -5,6 +5,6 @@ uint8 LEVEL_ERROR = 3
 
 string key
 uint8 level
-string content
+string message
 ---
 bool success
