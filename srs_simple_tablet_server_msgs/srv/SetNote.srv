@@ -1,0 +1,10 @@
+uint8 LEVEL_NONE = 0
+uint8 LEVEL_INFO = 1
+uint8 LEVEL_WARNING = 2
+uint8 LEVEL_ERROR = 3
+
+string key
+uint8 level
+string content
+---
+bool success
