@@ -201,15 +201,16 @@ class Ros2ApiServer(Node):
             if item[1].level == SetNote.Request.LEVEL_INFO:
                 level = "info"
             elif item[1].level == SetNote.Request.LEVEL_WARNING:
-                level_str = "warning"
+                level = "warning"
             elif item[1].level == SetNote.Request.LEVEL_ERROR:
-                level_str = "error"
+                level = "error"
             note_data["contents"].append({"level":level, "message":item[1].message})
 
         # output
         send_data = {}
-        send_data["drawer_select"] = drawer_select_data
-        send_data["action_select"] = action_select_data
+        send_data["select"] = {}
+        send_data["select"]["drawer"] = drawer_select_data
+        send_data["select"]["action"] = action_select_data
         send_data["display"] = display_data
         send_data["note"] = note_data
         return json.dumps(send_data)
