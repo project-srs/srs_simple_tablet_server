@@ -51,7 +51,7 @@ class Ros2ApiServer(Node):
         self.action_select_post_data_dic = {}
 
         # display
-        self.declare_parameter('display.header.name', 'manual')
+        self.declare_parameter('display.header.name', 'none')
         self.declare_parameter('display.header.color', 'gray')
         self.declare_parameter('display.board.icon', 'pause')
         self.declare_parameter('display.board.message', 'none')
